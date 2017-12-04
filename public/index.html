@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="chat">
+    <div class="head">
+      <span>status:</span>
+      <span id="status">offline</span>
+    </div>
+    <div id="pageChat">
+      <ul id="list">	
+      </ul>
+    </div>
+    <form id="createMsg">
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <input type="text" id="writeText" autofocus autocomplete="off"></input>
+      <input type="submit" id='button' value="Send" disabled></input>
+    </form>
+  </div>
+
+  <script src="../socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

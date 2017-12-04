@@ -1,0 +1,115 @@
+body {
+  background: #0B615E;
+}
+
+body, #chat{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 0 5px 0;
+  background: #50d3c2;
+}
+
+.head span {
+  margin-right: 10px;
+}
+
+#chat {
+  width: 600px;
+}
+
+#pageChat {
+  width: 100%;
+  height: 300px;
+  background-color: #EBE7DD;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding:0 5px;
+  margin: 0;
+}
+
+.time {
+  margin: 0;
+  color: #9F9F9F;
+  font-size: 12px;
+  font-style: italic;
+  display: inline;
+}
+
+p{
+  margin-bottom: 2px;
+  margin-top: 5px;
+}
+
+.del {
+  width: 11px;
+  height: 11px;
+  margin-left: 5px;
+  right: 0px;
+  background-image: url(http://s1.iconbird.com/ico/2013/10/464/w512h5121380984608delete.png);
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.del:hover{
+  opacity: 1;
+}
+
+.div, #createMsg {
+  display: flex;
+  flex-direction: row;
+}
+
+#createMsg {
+  width: 100%;
+}
+
+#writeText {
+  width: 80%;
+  height: 30px;
+}
+
+#button {
+  height: 35px;
+  width: 30%;
+}
+
+#list li {
+  width: 80%;
+  padding:5px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.me{
+  align-self: flex-end;
+  background: rgb(221, 252, 195);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.not_me{
+  align-self: flex-start;
+  background: rgb(195, 234, 252);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.chat_bot{
+  align-self: center;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 0.8em;
+}
